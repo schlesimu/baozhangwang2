@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "保障网招聘发布规则",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

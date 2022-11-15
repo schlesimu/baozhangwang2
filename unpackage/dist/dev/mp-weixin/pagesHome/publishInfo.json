@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "发布/编辑",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload",
+    "ben-video-upload": "/components/ben-video-upload/ben-video-upload",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

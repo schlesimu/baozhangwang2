@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "编辑资料",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker",
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

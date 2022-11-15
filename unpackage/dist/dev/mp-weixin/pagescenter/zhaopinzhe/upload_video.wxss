@@ -1,0 +1,54 @@
+.videobox {
+  position: relative;
+  margin: 0 30rpx;
+}
+.img-delete {
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+}
+.zyby-img-upload-common {
+  margin: 0 30rpx;
+  height: 450rpx;
+  margin-top: 26rpx;
+}
+.auth-img-item {
+  position: relative;
+}
+.auth-img-item > ._div:first-child {
+  height: 100%;
+  flex-direction: column;
+}
+.auth-img-item > ._div:first-child .text-desc {
+  margin-top: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+}
+.auth-img-item .exist-img {
+  width: 100%;
+  height: 100%;
+}
+.auth-img-item .upload-progress {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.img-delete {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+.img-item-special {
+  border: 1px dashed #CCCCCC;
+  border-radius: 6rpx;
+}
+.cu-tag {
+  position: absolute;
+  bottom: 26rpx;
+  right: 10rpx;
+  z-index: 10;
+}
+

@@ -1,0 +1,2 @@
+.cu-list.menu > .cu-item.arrow:nth-child(2):before,
+.cu-list.menu > .cu-item.arrow:nth-child(3):before{content:""}.cu-list.menu > .cu-item.arrow{min-height:150rpx}.cu-list.menu > .cu-item.arrow:before{top:58rpx;opacity:.6}.save{width:100%;position:fixed;bottom:0;left:0;background-color:#fff;z-index:100;padding:40rpx 0}

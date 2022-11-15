@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "album-compontents": "/pagesHome/conpoments/album_components",
+    "notice-compontents": "/pagesHome/conpoments/notice_components",
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

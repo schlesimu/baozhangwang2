@@ -1,0 +1,53 @@
+
+page,
+page {
+	background: #ffffff !important;
+	height: 100%;
+}
+.search_box {
+	font-size: 28rpx;
+	margin-top: 20rpx;
+	padding: 0 20rpx;
+	width: 100%;
+	height: 64rpx;
+	line-height: 64rpx;
+	background: #f7f7f7;
+	border-radius: 30rpx;
+}
+.navigation {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 180rpx;
+}
+.left_list {
+	background: #FFFFFF;
+	width: 35%;
+}
+.left_item {
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 28rpx;
+	text-align: center;
+	position: relative;
+
+	z-index: 99;
+	color: #666666;
+}
+.selected {
+	/* background: #ffffff; */
+	color: #1B90FF;
+	font-weight: 600;
+}
+.right_item {
+	width: 100%;
+	height: 100rpx;
+	font-size: 28rpx;
+	line-height: 100rpx;
+}
+.all {
+	padding-left: 50rpx;
+	margin-top: 20rpx;
+}
+

@@ -1,0 +1,24 @@
+
+.input {
+	border-bottom: 1px solid #efefef;
+}
+.uni-select__selector {
+	z-index: 20190118 !important;
+}
+.uni-fab {
+	z-index: 20190119 !important;
+}
+.uni-fab__circle {
+	z-index: 20190120 !important;
+}
+.uni-cursor-point .uni-fab--rightTop {
+	top: 590rpx !important;
+}
+.uni-cursor-point .uni-fab__circle--rightTop {
+	top: 590rpx !important;
+}
+.uni-calendar--fixed {
+	/* bottom: calc(100px)!important; */
+	z-index: 20200118 !important;
+}
+

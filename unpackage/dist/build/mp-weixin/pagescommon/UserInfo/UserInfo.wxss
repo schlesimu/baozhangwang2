@@ -1,0 +1,1 @@
+.picitem{width:215rpx;height:152rpx;border-radius:20rpx;overflow:hidden;margin-right:20rpx}.picitem image{width:100%;height:100%}.btn_btn{width:77rpx;height:32rpx;background:#50aeff;border:1px solid #50aeff;color:#fff;text-align:center;line-height:32rpx;font-size:11px}

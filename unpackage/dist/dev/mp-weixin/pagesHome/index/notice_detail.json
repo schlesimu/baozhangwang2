@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "通知详情",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "ls-comment": "/pagesHome/index/component/ls-comment"
+  }
+}

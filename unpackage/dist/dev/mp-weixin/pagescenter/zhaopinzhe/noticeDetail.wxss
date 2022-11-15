@@ -1,0 +1,16 @@
+
+page,
+page {
+	background: #fff !important;
+}
+.title {
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 1;
+	margin-bottom: 10rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-clamp: 2;
+}
+

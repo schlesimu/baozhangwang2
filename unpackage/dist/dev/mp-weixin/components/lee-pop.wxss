@@ -1,0 +1,20 @@
+
+.text-theme.data-v-6cfc0ba5{
+	color: #FF8429;
+}
+.handle-boxs.data-v-6cfc0ba5 {
+	height: 100rpx;
+	line-height: 100rpx;
+	width: 100%;
+	position: absolute;
+	bottom: 1px;
+	border-top: 1px solid #EEEEEE;
+}
+.handle-left.data-v-6cfc0ba5,.handle-right.data-v-6cfc0ba5{
+	width: 50%;
+	text-align: center;
+}
+.handle-left.data-v-6cfc0ba5{
+	border-right: 1px solid #eee;
+}
+

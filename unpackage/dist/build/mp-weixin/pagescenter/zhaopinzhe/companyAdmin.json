@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "公司管理",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload",
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

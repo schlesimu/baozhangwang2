@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pagesHome/conpoments/album_components"],{"079c":function(t,e,n){"use strict";var a=n("ae1a"),u=n.n(a);u.a},"1c8d":function(t,e,n){"use strict";var a;n.d(e,"b",(function(){return u})),n.d(e,"c",(function(){return i})),n.d(e,"a",(function(){return a}));var u=function(){var t=this,e=t.$createElement;t._self._c},i=[]},"95b9":function(t,e,n){"use strict";n.r(e);var a=n("1c8d"),u=n("e570");for(var i in u)"default"!==i&&function(t){n.d(e,t,(function(){return u[t]}))}(i);n("079c");var o,c=n("f0c5"),r=Object(c["a"])(u["default"],a["b"],a["c"],!1,null,null,null,!1,a["a"],o);e["default"]=r.exports},ae1a:function(t,e,n){},df08:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=u(n("c5aa"));function u(t){return t&&t.__esModule?t:{default:t}}var i={mixins:[a.default],props:{companyId:{type:[String,Number]}},data:function(){return{data:[],video:!1,user_id:t.getStorageSync("USERINFO").id,IMG_URL:this.IMG_URL}},created:function(){var e=this;this.getalubm(),t.$on("albumUpdate",(function(t){e.getalubm()}))},methods:{godetail:function(e){1==e.type?t.navigateTo({url:"/pagescenter/zhaopinzhe/albumDetail?aid="+e.aid}):t.navigateTo({url:"/pagescenter/zhaopinzhe/album_play?aid="+e.aid+"&user_id="+this.user_id})},getalubm:function(){var t=this;this.$Request.post(this.$api.Community.getAlbumlist,{company_id:this.companyId,type:1}).then((function(e){console.log(e,"我的相册"),1==e.code&&(t.data=e.data.data)}))}}};e.default=i}).call(this,n("543d")["default"])},e570:function(t,e,n){"use strict";n.r(e);var a=n("df08"),u=n.n(a);for(var i in a)"default"!==i&&function(t){n.d(e,t,(function(){return a[t]}))}(i);e["default"]=u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pagesHome/conpoments/album_components-create-component',
+    {
+        'pagesHome/conpoments/album_components-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("95b9"))
+        })
+    },
+    [['pagesHome/conpoments/album_components-create-component']]
+]);

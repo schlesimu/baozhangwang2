@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "记录工时",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
+    "uni-data-select": "/uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "uni-fab": "/uni_modules/uni-fab/components/uni-fab/uni-fab"
+  }
+}

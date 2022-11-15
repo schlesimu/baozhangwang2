@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我收藏的简历",
+  "usingComponents": {
+    "lee-popup": "/components/lee-pop"
+  }
+}

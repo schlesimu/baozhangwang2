@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "兼职任务",
+  "usingComponents": {
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

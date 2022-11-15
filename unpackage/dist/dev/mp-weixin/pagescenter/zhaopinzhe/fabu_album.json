@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的相册",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

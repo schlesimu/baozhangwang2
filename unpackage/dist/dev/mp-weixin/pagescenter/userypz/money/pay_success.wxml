@@ -1,0 +1,1 @@
+<view><view class="contant flex align-center justify-center column"><view class="pt30"><image src="{{IMG_URL+'static/miniwechat/success.png'}}" mode></image></view><view class="text-center pt10 mb10" style="font-size:36rpx;">提现成功</view><view class="f24 text-gray mb5">{{"提现方式："+(account_type==2?'支付宝':'微信')}}</view><view class="f24 text-gray">{{"提现金额：￥"+money}}</view></view></view>

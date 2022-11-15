@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "u-empty": "/uview-ui/components/u-empty/u-empty"
+  }
+}

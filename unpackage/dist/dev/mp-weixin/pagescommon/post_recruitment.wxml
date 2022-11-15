@@ -1,0 +1,1 @@
+<view><view class="padding"><jyf-parser class="vue-ref" vue-id="4c5a9a7b-1" html="{{rule}}" data-ref="article" bind:__l="__l"></jyf-parser></view></view>

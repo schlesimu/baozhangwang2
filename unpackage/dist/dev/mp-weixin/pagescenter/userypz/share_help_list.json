@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "分享",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "countdown": "/pagescenter/countdown/countdown",
+    "min-countdown": "/pagescenter/min-countdown"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "创建职位",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload",
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

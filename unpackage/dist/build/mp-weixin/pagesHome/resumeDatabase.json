@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "简历库",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-empty": "/uview-ui/components/u-empty/u-empty",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "lee-popup": "/components/lee-pop",
+    "fu-filter": "/components/fu-filter"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "工资查询",
+  "usingComponents": {
+    "album-compontents": "/pagesHome/conpoments/album_components",
+    "notice-compontents": "/pagesHome/conpoments/notice_components",
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

@@ -1,0 +1,1 @@
+<view><web-view src="{{BASEURL+'static/albumdetail/redirect.html?aid='+this.aid+'&user_id='+user_id}}"></web-view></view>

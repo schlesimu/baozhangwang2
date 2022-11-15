@@ -1,0 +1,1 @@
+<view><view class="cu-list menu brt_e"><view data-event-opts="{{[['tap',[['toPage',[1]]]]]}}" class="cu-item arrow" bindtap="__e"><view class="content"><text>微信</text></view></view></view></view>

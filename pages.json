@@ -1,0 +1,1177 @@
+{
+    "easycom" : {
+        "^u-(.*)" : "@/uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        // #ifdef H5||APP-PLUS
+        {
+            "path" : "pages/guide/guide",
+            "style" : {
+                "navigationBarTextStyle" : "black",
+                "navigationStyle" : "custom",
+                "disableScroll" : true,
+                "enablePullDownRefresh" : false,
+                "app-plus" : {
+                    "bounce" : "none",
+                    "scrollIndicator" : "none",
+                    "pullToRefresh" : {
+                        "support" : false
+                    }
+                }
+            }
+        },
+        // #endif
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationStyle" : "custom",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pagesworktime/worktimerecord",
+            "style" : {
+                "navigationBarTitleText" : "记录工时",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pagesworktime/worktimestatistics",
+            "style" : {
+                "navigationBarTitleText" : "工时统计",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pagesworktime/salarysettings",
+            "style" : {
+                "navigationBarTitleText" : "工资设置",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pagesworktime/recordnotebook",
+            "style" : {
+                "navigationBarTitleText" : "记事本",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pagesworktime/notebooklist",
+            "style" : {
+                "navigationBarTitleText" : "记事本列表",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "App",
+            "style" : {}
+        },
+        {
+            "path" : "pages/tabbar/worktimeindex",
+            "style" : {}
+        }
+    ],
+    "permission" : {
+        "scope.userLocation" : {
+            "desc" : "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+        }
+    },
+    // ---------------------------------------------------------------------------------------
+    "subPackages" : [
+        {
+            //分包加载配置，此配置为小程序的分包加载机制
+            "root" : "pagesHome",
+            "pages" : [
+                {
+                    "path" : "index/plant_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "职位详情",
+                        "app-plus" : {
+                            "titleNView" : false
+                        }
+                    }
+                },
+                {
+                    "path" : "index/broker_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "经纪人详情",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "index/code_check",
+                    "style" : {
+                        "navigationBarTitleText" : "验证码查询",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "index/signUp_morker",
+                    "style" : {
+                        "navigationBarTitleText" : "报名经纪人",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "part_sort", //网约工职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "职位详情",
+                        "app-plus" : {
+                            "titleNView" : false
+                        }
+                    }
+                },
+                {
+                    "path" : "resumeDatabase", //网约工职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "简历库",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "get_order_rule", //接单规则
+                    "style" : {
+                        "navigationBarTitleText" : "接单协议",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "verification", //接单规则
+                    "style" : {
+                        "navigationBarTitleText" : "验证",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "complaint",
+                    "style" : {
+                        "navigationBarTitleText" : "提交举报资料",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "submit_success",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "sign_up",
+                    "style" : {
+                        "navigationBarTitleText" : "报名",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "sign_success",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "index/job_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "详情",
+                        "app-plus" : {
+                            "titleNView" : false
+                        }
+                    }
+                },
+                {
+                    "path" : "index/salary_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "详情",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "postDetail", //招聘端职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "职位详情",
+                        "app-plus" : {
+                            "titleNView" : false
+                        }
+                    }
+                },
+                {
+                    "path" : "convenience", //招聘端职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "本地零工市场",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "publishInfo", // 本地信息或坑骗拖欠名单发布
+                    "style" : {
+                        "navigationBarTitleText" : "发布/编辑",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "partList", //招聘端职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "兼职任务",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "plantList", //招聘端职位详情
+                    "style" : {
+                        "navigationBarTitleText" : "职位列表",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                }, //便民信息详情
+                {
+                    "path" : "index/convenience_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "详情",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none",
+                            "titleNView" : "false"
+                        }
+                    }
+                }, //通知、广告、活动详情
+                {
+                    "path" : "index/notice_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "通知详情",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none",
+                            "titleNView" : "false"
+                        }
+                    }
+                },
+                {
+                    "path" : "applyTop",
+                    "style" : {
+                        "navigationBarTitleText" : "申请置顶",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "look_help_list",
+                    "style" : {
+                        "navigationBarTitleText" : "助力记录",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "look_resume",
+                    "style" : {
+                        "navigationBarTitleText" : "简历",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "lookResumeNew",
+                    "style" : {
+                        "navigationBarTitleText" : "查看简历",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "payViewNumber",
+                    "style" : {
+                        "navigationBarTitleText" : "支付",
+                        "app-plus" : {
+                            "bounce" : "none"
+                        }
+                    }
+                },
+                {
+                    "path" : "gongsiDetail",
+                    "style" : {
+                        "navigationStyle" : "custom"
+                    }
+                }
+            ]
+        },
+        {
+            "root" : "pagesmessage",
+            "pages" : [
+                {
+                    "path" : "userMsg", //
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom",
+                        "softinputMode" : "adjustResize"
+                    }
+                },
+                {
+                    "path" : "msg", //系统消息
+                    "style" : {
+                        "navigationBarTitleText" : "系统消息",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "root" : "pagescenter",
+            "pages" : [
+                // 应聘端我的收藏
+                {
+                    "path" : "userypz/my_shoucang",
+                    "style" : {
+                        "navigationBarTitleText" : "我的收藏",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/my_collectResume",
+                    "style" : {
+                        "navigationBarTitleText" : "我收藏的简历",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/mySalary",
+                    "style" : {
+                        "navigationBarTitleText" : "工资查询",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果，
+                        }
+                    }
+                },
+                // 地图
+                {
+                    "path" : "index",
+                    "style" : {
+                        "app-plus" : {
+                            "titleNView" : {
+                                "searchInput" : {
+                                    "placeholder" : "搜索地点",
+                                    "backgroundColor" : "rgba(0,0,0,.04)",
+                                    "borderRadius" : "15px"
+                                },
+                                "buttons" : [
+                                    {
+                                        "text" : "搜索",
+                                        "fontSize" : "12px"
+                                    }
+                                ]
+                            },
+                            "softinputMode" : "adjustResize"
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/singUpStatus",
+                    "style" : {
+                        "navigationBarTitleText" : "报名状态",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/my_envelopes",
+                    "style" : {
+                        "navigationBarTitleText" : "我的红包",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/share_help_list",
+                    "style" : {
+                        "navigationBarTitleText" : "分享",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/online_authencation",
+                    "style" : {
+                        "navigationBarTitleText" : "上传认证",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/wallet",
+                    "style" : {
+                        "navigationBarTitleText" : "钱包",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/withdraw",
+                    "style" : {
+                        "navigationBarTitleText" : "提现",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/pay_pwd",
+                    "style" : {
+                        "navigationBarTitleText" : "设置支付密码",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/findPassword",
+                    "style" : {
+                        "navigationBarTitleText" : "修改提现密码",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/confirm_pwd",
+                    "style" : {
+                        "navigationBarTitleText" : "确认支付密码",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/bind_account",
+                    "style" : {
+                        "navigationBarTitleText" : "绑定",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/pay_success",
+                    "style" : {
+                        "navigationBarTitleText" : "提现成功",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/money/bind_alipay",
+                    "style" : {
+                        "navigationBarTitleText" : "支付宝",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/zhaopinSort",
+                    "style" : {
+                        "navigationBarTitleText" : "我要招人",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/feedback",
+                    "style" : {
+                        "navigationBarTitleText" : "意见反馈",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/my_jianli",
+                    "style" : {
+                        "navigationBarTitleText" : "我的简历",
+                        "navigationStyle" : "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/resume_attachment",
+                    "style" : {
+                        "navigationBarTitleText" : "上传附件",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/my_order",
+                    "style" : {
+                        "navigationBarTitleText" : "我的接单",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/order_detail",
+                    "style" : {
+                        "navigationBarTitleText" : "详情",
+                        "app-plus" : {
+                            "titleNView" : false
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/my_part_list",
+                    "style" : {
+                        // "navigationBarTitleText": "网约工",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                // "app-plus": {
+                // 	"bounce": "none" //关闭窗口回弹效果
+                // }
+                {
+                    "path" : "userypz/pick_up_person",
+                    "style" : {
+                        "navigationBarTitleText" : "接单人",
+                        // "navigationStyle": "custom"
+                        "enablePullDownRefresh" : true,
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/person_status",
+                    "style" : {
+                        "navigationBarTitleText" : "接单人",
+                        // "navigationStyle": "custom"
+                        "enablePullDownRefresh" : true,
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/fabu_part",
+                    "style" : {
+                        "navigationBarTitleText" : "发布任务",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "userypz/edit_part",
+                    "style" : {
+                        "navigationBarTitleText" : "编辑任务",
+                        // "navigationStyle": "custom",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/fabu", //支付页面
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/fabu_zhiwei", //
+                    "style" : {
+                        "navigationBarTitleText" : "创建职位",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/cancelCompany", //
+                    "style" : {
+                        "navigationBarTitleText" : "注销公司",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/upload_video", //
+                    "style" : {
+                        "navigationBarTitleText" : "上传视频",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/play_video", //
+                    "style" : {
+                        "navigationBarTitleText" : "播放视频",
+                        "navigationStyle" : "custom",
+                        // "navigationBarBackgroundColor": "#FFFFFF",
+                        // "navigationBarTextStyle": "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                // "titleNView": {
+                // 	"buttons": [{
+                // 		// "text": "积分商城",
+                // 		"titleIcon":"/static/images/logo.png",
+                // 		"width": "34px",
+                // 		"fontWeight":"34px"
+                // 	}]
+                // }
+                {
+                    "path" : "zhaopinzhe/bianji_zhiwei", //编辑发布职位
+                    "style" : {
+                        "navigationBarTitleText" : "编辑职位",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/sign_list", //编辑发布职位
+                    "style" : {
+                        "navigationBarTitleText" : "报名列表",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/companyAdmin", //
+                    "style" : {
+                        "navigationBarTitleText" : "公司管理",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/yaoqing", //
+                    "style" : {
+                        "navigationBarTitleText" : "分享码",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/notice", //
+                    "style" : {
+                        // "navigationBarTitleText": "最新通知",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                // "navigationBarBackgroundColor": "#FFFFFF",
+                // "navigationBarTextStyle": "black"
+                {
+                    "path" : "zhaopinzhe/fabu_notice", //
+                    "style" : {
+                        "navigationBarTitleText" : "发布通知",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/bianj_notice", //
+                    "style" : {
+                        "navigationBarTitleText" : "编辑通知",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/noticeDetail", //
+                    "style" : {
+                        "navigationBarTitleText" : "通知详情",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/album", //
+                    "style" : {
+                        "navigationBarTitleText" : "我的相册",
+                        "navigationStyle" : "custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                },
+                {
+                    "path" : "zhaopinzhe/albumDetail", //
+                    "style" : {
+                        "navigationBarTitleText" : "相册详情",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                // "titleNView": {
+                // 	"buttons": [{
+                // 		"text": "删除",
+                // 		"width": "34px",
+                // 		"fontSize":"14px"
+                // 	}]
+                // }
+                {
+                    "path" : "zhaopinzhe/albumDetail_video", //小程序相册详情
+                    "style" : {
+                        "navigationBarTitleText" : "相册详情",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                // "titleNView": {
+                // 	"buttons": [{
+                // 		"text": "删除",
+                // 		"width": "34px",
+                // 		"fontSize":"14px"
+                // 	}]
+                // }
+                {
+                    "path" : "zhaopinzhe/album_play", //相册视频
+                    "style" : {
+                        "navigationBarTitleText" : "相册详情",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#000000",
+                        "navigationBarTextStyle" : "#ffffff",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                // "titleNView": {
+                // 	"buttons": [{
+                // 		"text": "删除",
+                // 		"width": "34px",
+                // 		"fontSize":"14px"
+                // 	}]
+                // }
+                {
+                    "path" : "zhaopinzhe/fabu_album", //发布相册
+                    "style" : {
+                        "navigationBarTitleText" : "我的相册",
+                        // "navigationStyle":"custom",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black"
+                    }
+                }
+            ]
+        },
+        {
+            "root" : "pagescommon",
+            "pages" : [
+                {
+                    "path" : "setting",
+                    "style" : {
+                        "navigationBarTitleText" : "设置",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "UserInfo/UserInfo",
+                    "style" : {
+                        "navigationBarTitleText" : "我的发布",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "news-search",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "search_list",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "my_search",
+                    "style" : {
+                        "navigationBarTitleText" : "职位类型",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "pay_success", //支付成功
+                    "style" : {
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "about",
+                    "style" : {
+                        "navigationBarTitleText" : "关于我们",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "resetpassword",
+                    "style" : {
+                        "navigationBarTitleText" : "重置密码",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "agreement",
+                    "style" : {
+                        "navigationBarTitleText" : "用户协议"
+                    }
+                },
+                {
+                    "path" : "post_recruitment",
+                    "style" : {
+                        "navigationBarTitleText" : "保障网招聘发布规则"
+                    }
+                },
+                {
+                    "path" : "update",
+                    "style" : {
+                        "navigationBarTitleText" : "系统更新"
+                    }
+                },
+                {
+                    "path" : "upload",
+                    "style" : {
+                        "navigationBarTitleText" : "编辑头像"
+                    }
+                },
+                {
+                    "path" : "yingpin_detail", // 应聘者详情
+                    "style" : {
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "gongsi_fuli", //公司福利标签
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "position", //定位
+                    "style" : {
+                        "navigationBarTitleText" : "切换城市",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "area_list", //定位选择县
+                    "style" : {
+                        "navigationBarTitleText" : "选择区/县级",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "root" : "pagesauthen", //认证信息相关页面
+            "pages" : [
+                {
+                    "path" : "my_editInfo",
+                    "style" : {
+                        "navigationBarTitleText" : "编辑资料",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "work_jingli", //就职经历
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "experience", //教育经历
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "business",
+                    "style" : {
+                        "navigationBarTitleText" : "我要招人",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "choose_shenfen",
+                    "style" : {
+                        "navigationBarTitleText" : "选择身份",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationStyle" : "custom",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "company",
+                    "style" : {
+                        "navigationBarTitleText" : "我要招人",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "my_zhaopin",
+                    "style" : {
+                        "navigationBarTitleText" : "个人信息",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "root" : "pagessignup", //登录注册相关页面
+            "pages" : [
+                {
+                    "path" : "login",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "wechat/wxlog",
+                    "style" : {
+                        "navigationBarTitleText" : "保障网",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "code", //输入验证码的四个框
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "chooseCity", //选择推送城市
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationStyle" : "custom"
+                    }
+                },
+                {
+                    "path" : "register",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "resetpassword",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                },
+                {
+                    "path" : "bind_account",
+                    "style" : {
+                        "navigationBarTitleText" : "",
+                        "navigationBarBackgroundColor" : "#FFFFFF",
+                        "navigationBarTextStyle" : "black",
+                        "app-plus" : {
+                            "bounce" : "none" //关闭窗口回弹效果
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    // "preloadRule": { //分包预载配置。
+    // 	"pagesA/list/list": {
+    // 		"network": "all",
+    // 		"packages": ["__APP__"]
+    // 	},
+    // 	"pagesB/detail/detail": {
+    // 		"network": "all",
+    // 		"packages": ["pagesA"]
+    // 	}
+    // },
+    "globalStyle" : {
+        "navigationBarBackgroundColor" : "#FFFFFF",
+        "navigationBarTitleText" : "招聘",
+        "navigationBarTextStyle" : "black"
+    },
+    "requiredPrivateInfos" : [ "chooseAddress", "getLocation", "chooseLocation" ]
+}
+// "tabBar": {
+// 	"color": "#BFBFBF",
+// 	"selectedColor": "#7AB801",
+// 	"borderStyle": "black",
+// 	"backgroundColor": "#ffffff"
+// 	// "list": [
+// 	// {
+// 	//         "pagePath": "pages/index/index",
+// 	//         "iconPath": "static/images/icon/home.png",
+// 	//         "selectedIconPath": "static/images/icon/home-hover.png",
+// 	//         "text": "首页"
+// 	//     },
+// 	//     {
+// 	//         "pagePath": "pages/message/message",
+// 	//         "iconPath": "static/images/icon/xiaoxi.png",
+// 	//         "selectedIconPath": "static/images/icon/xiaoxi-hover.png",
+// 	//         "text": "消息"
+// 	//     },
+// 	//     {
+// 	//         "pagePath": "pages/center/center",
+// 	//         "iconPath": "static/images/icon/user.png",
+// 	//         "selectedIconPath": "static/images/icon/user-hover.png",
+// 	//         "text": "我的"
+// 	//     }
+// }
+// "requiredPrivateInfos": [
+//    "getLocation",
+//    "onLocationChange",
+//    "chooseAddress",
+//    "chooseLocation",
+//    "startLocationUpdate",
+//    "startLocationUpdateBackground"
+//  ]
+

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发布任务",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload",
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

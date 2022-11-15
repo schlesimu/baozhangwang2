@@ -1,0 +1,171 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pagesworktime/worktimerecord",
+    "pagesworktime/worktimestatistics",
+    "pagesworktime/salarysettings",
+    "pagesworktime/recordnotebook",
+    "pagesworktime/notebooklist",
+    "App.js",
+    "pages/tabbar/worktimeindex"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesHome",
+      "pages": [
+        "index/plant_detail",
+        "index/broker_detail",
+        "index/code_check",
+        "index/signUp_morker",
+        "part_sort",
+        "resumeDatabase",
+        "get_order_rule",
+        "verification",
+        "complaint",
+        "submit_success",
+        "sign_up",
+        "sign_success",
+        "index/job_detail",
+        "index/salary_detail",
+        "postDetail",
+        "convenience",
+        "publishInfo",
+        "partList",
+        "plantList",
+        "index/convenience_detail",
+        "index/notice_detail",
+        "applyTop",
+        "look_help_list",
+        "look_resume",
+        "lookResumeNew",
+        "payViewNumber",
+        "gongsiDetail"
+      ]
+    },
+    {
+      "root": "pagesmessage",
+      "pages": [
+        "userMsg",
+        "msg"
+      ]
+    },
+    {
+      "root": "pagescenter",
+      "pages": [
+        "userypz/my_shoucang",
+        "userypz/my_collectResume",
+        "userypz/mySalary",
+        "index",
+        "userypz/singUpStatus",
+        "userypz/my_envelopes",
+        "userypz/share_help_list",
+        "userypz/online_authencation",
+        "userypz/money/wallet",
+        "userypz/money/withdraw",
+        "userypz/money/pay_pwd",
+        "userypz/money/findPassword",
+        "userypz/money/confirm_pwd",
+        "userypz/money/bind_account",
+        "userypz/money/pay_success",
+        "userypz/money/bind_alipay",
+        "userypz/zhaopinSort",
+        "userypz/feedback",
+        "userypz/my_jianli",
+        "userypz/resume_attachment",
+        "userypz/my_order",
+        "userypz/order_detail",
+        "userypz/my_part_list",
+        "userypz/pick_up_person",
+        "userypz/person_status",
+        "userypz/fabu_part",
+        "userypz/edit_part",
+        "zhaopinzhe/fabu",
+        "zhaopinzhe/fabu_zhiwei",
+        "zhaopinzhe/cancelCompany",
+        "zhaopinzhe/upload_video",
+        "zhaopinzhe/play_video",
+        "zhaopinzhe/bianji_zhiwei",
+        "zhaopinzhe/sign_list",
+        "zhaopinzhe/companyAdmin",
+        "zhaopinzhe/yaoqing",
+        "zhaopinzhe/notice",
+        "zhaopinzhe/fabu_notice",
+        "zhaopinzhe/bianj_notice",
+        "zhaopinzhe/noticeDetail",
+        "zhaopinzhe/album",
+        "zhaopinzhe/albumDetail",
+        "zhaopinzhe/albumDetail_video",
+        "zhaopinzhe/album_play",
+        "zhaopinzhe/fabu_album"
+      ]
+    },
+    {
+      "root": "pagescommon",
+      "pages": [
+        "setting",
+        "UserInfo/UserInfo",
+        "news-search",
+        "search_list",
+        "my_search",
+        "pay_success",
+        "about",
+        "resetpassword",
+        "agreement",
+        "post_recruitment",
+        "update",
+        "upload",
+        "yingpin_detail",
+        "gongsi_fuli",
+        "position",
+        "area_list"
+      ]
+    },
+    {
+      "root": "pagesauthen",
+      "pages": [
+        "my_editInfo",
+        "work_jingli",
+        "experience",
+        "business",
+        "choose_shenfen",
+        "company",
+        "my_zhaopin"
+      ]
+    },
+    {
+      "root": "pagessignup",
+      "pages": [
+        "login",
+        "wechat/wxlog",
+        "code",
+        "chooseCity",
+        "register",
+        "resetpassword",
+        "bind_account"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "招聘",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取定位"
+    }
+  },
+  "usingComponents": {
+    "homepage": "/pages/tabbar/homepage",
+    "message": "/pages/tabbar/message",
+    "worktime": "/pages/tabbar/worktimeindex",
+    "user": "/pages/tabbar/user",
+    "homepage-two": "/pages/tabbar/homepageTwo",
+    "zhaopinzhe": "/pages/tabbar/zhaopinzhe",
+    "plant-list": "/components/plantList",
+    "service-broker": "/components/serviceBroker",
+    "mescroll-body": "/components/mescroll-uni/mescroll-body",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}

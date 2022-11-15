@@ -1,0 +1,116 @@
+.custom-map-list {
+  display: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 260px);
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+
+  &-wapper {
+    width: 100%;
+    height: calc(100vh - 260px);
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30upx 30upx 30upx 30upx;
+    transition: all ease .2s;
+    background-color: #fff;
+
+    &.active {
+      background-color: #f7f7f7;
+    }
+
+    &:active {
+      background-color: #f7f7f7;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #f7f7f7;
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+
+    &-lside {
+      flex: 1;
+    }
+
+    &-rside {
+      padding-left: 10upx;
+
+      image {
+        width: 42upx;
+        height: 42upx;
+      }
+    }
+
+    &-title {
+      font-size: 32upx;
+      color: #333;
+      padding-bottom: 8upx;
+    }
+
+    &-desc {
+      font-size: 28upx;
+      color: #999;
+      line-height: 1.3;
+    }
+  }
+
+  &-empty-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 260px);
+
+    image {
+      width: 120upx;
+      height: 120upx;
+      opacity: .3;
+    }
+
+    .text {
+      font-size: 24upx;
+      color: #999;
+      line-height: 2;
+      padding-top: 30upx;
+    }
+  }
+}
+
+.confirm-btn {
+  position: fixed;
+  right: 40upx;
+  bottom: 80upx;
+  width: 120upx;
+  height: 120upx;
+  // background-color: $custom-main-color;
+  background-image:  linear-gradient(45deg, rgba(#62B264, .6), rgba(#62B264, 1));
+  font-size: 24upx;
+  line-height: 1.2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease .3s;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+  &:active {
+    opacity: .8;
+  }
+}

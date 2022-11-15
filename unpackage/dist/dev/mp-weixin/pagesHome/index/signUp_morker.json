@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "报名经纪人",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

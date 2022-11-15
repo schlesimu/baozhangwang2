@@ -1,0 +1,239 @@
+{
+    "name" : "人人保障网",
+    "appid" : "__UNI__EB85E19",
+    "description" : "",
+    "versionName" : "2.0.4",
+    "versionCode" : 204,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "nvueStyleCompiler" : "uni-app",
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "privacy" : {
+            "prompt" : "template",
+            "template" : {
+                "title" : "服务协议和隐私政策",
+                "message" : "　　请你务必审慎阅读、充分理解“服务协议”和“隐私政策”各条款，<br/>　你可阅读<a href=\"https://app.chongdarenli.com/index/index/user_agreement.html\">《用户协议》</a>和<a href=\"https://app.chongdarenli.com/index/index/privacy_agreement.html\">《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+                "buttonAccept" : "同意",
+                "buttonRefuse" : "暂不同意",
+                "second" : {
+                    "title" : "温馨提示",
+                    "message" : "进入应用前，你需先同意<a href=\"https://app.chongdarenli.com/index/index/user_agreement.html\">《用户协议》</a>和 <a href=\"https://app.chongdarenli.com/index/index/privacy_agreement.html\">《隐私政策》</a>，否则将退出应用。",
+                    "buttonAccept" : "同意并继续",
+                    "buttonRefuse" : "退出应用"
+                }
+            }
+        },
+        "softinput" : {
+            "navBar" : "none" // 是否显示软键盘上的导航条  
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Share" : {},
+            "OAuth" : {},
+            "Payment" : {},
+            "Maps" : {},
+            "VideoPlayer" : {},
+            "Speech" : {},
+            "Fingerprint" : {},
+            "Push" : {},
+            "Geolocation" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.USE_FINGERPRINT\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "permissionExternalStorage" : {
+                    "request" : "once",
+                    "prompt" : "应用保存运行状态等信息，需要获取读写手机存储（系统提示为访问设备上的照片、媒体内容和文件）权限，请允许。"
+                },
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "privacyDescription" : {
+                    "NSLocalNetworkUsageDescription" : "需要您的同意，才能访问本地网络，用于数据请求，如禁止将无法正常访问，是否访问？",
+                    "NSPhotoLibraryUsageDescription" : "访问您的相册用于反馈或设置头像或发布职位或报名职位，是否允许打开？",
+                    "NSPhotoLibraryAddUsageDescription" : "访问您的相册用于反馈或设置头像或发布职位或报名职位，是否允许打开？",
+                    "NSCameraUsageDescription" : "访问您的相机用于反馈或设置头像或发布职位或报名职位，是否允许打开？",
+                    "NSMicrophoneUsageDescription" : "将用于应用内语音聊天功能",
+                    "NSLocationWhenInUseUsageDescription" : "获取当前位置，便于推荐附近的公司、职位及计算您的位置到公司、职位之间的距离",
+                    "NSLocationAlwaysUsageDescription" : "获取当前位置，便于推荐附近的公司、职位及计算您的位置到公司、职位之间的距离",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "获取当前位置，便于推荐附近的公司、职位及计算您的位置到公司、职位之间的距离"
+                },
+                "idfa" : false,
+                "capabilities" : {
+                    "entitlements" : {
+                        // 合并到工程entitlements文件的数据（json格式） 
+                        "com.apple.developer.associated-domains" : [ "applinks:com.baozhangwanga.benben", "applinks:app.chongdarenli.com" ]
+                    },
+                    "plists" : {}
+                }
+            },
+            // 合并到工程Info.plist文件的数据（json格式）  
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "push" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wxf0e36ceb2def9c0e",
+                        "appsecret" : "b0630436078cec14c0d6d101e27f454b",
+                        "UniversalLinks" : "https://app.chongdarenli.com/uni-universallinks/__UNI__EB85E19/"
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wxf0e36ceb2def9c0e",
+                        "UniversalLinks" : "https://app.chongdarenli.com/uni-universallinks/__UNI__EB85E19/"
+                    }
+                },
+                "payment" : {
+                    "weixin" : {
+                        "appid" : "wxf0e36ceb2def9c0e",
+                        "UniversalLinks" : "https://app.chongdarenli.com/uni-universallinks/__UNI__EB85E19/"
+                    },
+                    "alipay" : {}
+                },
+                "speech" : {
+                    "ifly" : {}
+                },
+                "ad" : {},
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "4a850d589179a7ed97b8c228455d6cd6",
+                        "appkey_android" : "a8ad17684d69d8c1a32309b09ebfa028"
+                    }
+                },
+                "geolocation" : {
+                    "amap" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appkey_ios" : "4a850d589179a7ed97b8c228455d6cd6",
+                        "appkey_android" : "a8ad17684d69d8c1a32309b09ebfa028"
+                    },
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "xxhdpi" : "/Users/jt/Desktop/renren/baozhang/资料/启动页/start.png",
+                    "xhdpi" : "/Users/jt/Desktop/renren/baozhang/资料/启动页/start.png",
+                    "hdpi" : "/Users/jt/Desktop/renren/baozhang/资料/启动页/start.png"
+                },
+                "androidStyle" : "default",
+                "iosStyle" : "storyboard",
+                "ios" : {
+                    "storyboard" : "/Users/jt/Desktop/renren/baozhang/资料/启动页/ios/CustomStoryboard.zip"
+                },
+                "useOriginalMsgbox" : true
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "/Users/jt/Desktop/renren/logo集合/logo72x72.png",
+                    "xhdpi" : "/Users/jt/Desktop/renren/logo集合/logo96x96.png",
+                    "xxhdpi" : "/Users/jt/Desktop/renren/logo集合/logo144x144.png",
+                    "xxxhdpi" : "/Users/jt/Desktop/renren/logo集合/logo192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "/Users/jt/Desktop/renren/logo集合/logo1024x1024.png",
+                    "ipad" : {
+                        "app" : "/Users/jt/Desktop/renren/logo集合/logo76x76.png",
+                        "app@2x" : "/Users/jt/Desktop/renren/logo集合/logo152x152.png",
+                        "notification" : "/Users/jt/Desktop/renren/logo集合/logo20x20.png",
+                        "notification@2x" : "/Users/jt/Desktop/renren/logo集合/logo40x40.png",
+                        "proapp@2x" : "/Users/jt/Desktop/renren/logo集合/logo167x167.png",
+                        "settings" : "/Users/jt/Desktop/renren/logo集合/logo29x29.png",
+                        "settings@2x" : "/Users/jt/Desktop/renren/logo集合/logo58x58.png",
+                        "spotlight" : "/Users/jt/Desktop/renren/logo集合/logo40x40.png",
+                        "spotlight@2x" : "/Users/jt/Desktop/renren/logo集合/logo80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "/Users/jt/Desktop/renren/logo集合/logo120x120.png",
+                        "app@3x" : "/Users/jt/Desktop/renren/logo集合/logo180x180.png",
+                        "notification@2x" : "/Users/jt/Desktop/renren/logo集合/logo40x40.png",
+                        "notification@3x" : "/Users/jt/Desktop/renren/logo集合/logo60x60.png",
+                        "settings@2x" : "/Users/jt/Desktop/renren/logo集合/logo58x58.png",
+                        "settings@3x" : "/Users/jt/Desktop/renren/logo集合/logo87x87.png",
+                        "spotlight@2x" : "/Users/jt/Desktop/renren/logo集合/logo80x80.png",
+                        "spotlight@3x" : "/Users/jt/Desktop/renren/logo集合/logo120x120.png"
+                    }
+                }
+            }
+        },
+        "nvueLaunchMode" : ""
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx2c5d53c1edba475f",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : false,
+            "postcss" : false,
+            "minified" : false
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "用于获取定位"
+            }
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        },
+        "sdkConfigs" : {
+            "maps" : {}
+        },
+        "title" : "",
+        "domain" : "https://app.chongdarenli.com/"
+    },
+    "_spaceID" : "88ab4269-6522-473f-8297-fd3f724141a2"
+}

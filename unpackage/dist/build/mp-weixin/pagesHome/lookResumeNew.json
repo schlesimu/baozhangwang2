@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "查看简历",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker",
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

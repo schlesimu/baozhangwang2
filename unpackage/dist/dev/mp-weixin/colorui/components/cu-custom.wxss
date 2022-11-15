@@ -1,0 +1,6 @@
+
+.bg-gradual-theme{
+	/* background: linear-gradient(#4DB34A, #3E9E4D); */
+	color: #fff;
+}
+

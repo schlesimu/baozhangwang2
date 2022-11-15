@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "报名",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

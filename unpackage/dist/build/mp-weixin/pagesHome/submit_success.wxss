@@ -1,0 +1,1 @@
+page{background-color:#fff}.contant{width:520rpx;height:100%;margin:auto}.contant image{width:320rpx;height:320rpx}.contant .btn_return{width:320rpx;height:88rpx;border:1px solid #666;border-radius:4rpx;color:#666;font-size:28rpx;text-align:center;line-height:88rpx;margin:200rpx auto}

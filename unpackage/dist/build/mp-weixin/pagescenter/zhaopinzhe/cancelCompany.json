@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "注销公司",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ben-upload": "/components/ben-upload/ben-upload"
+  }
+}

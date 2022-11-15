@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

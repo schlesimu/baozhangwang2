@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "经纪人详情",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar"
+  }
+}
