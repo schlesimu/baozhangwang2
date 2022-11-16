@@ -226,7 +226,7 @@ export default {
 					id: 2
 				},
 				{
-					name: '全国门店服务经纪人',
+					name: '附近门店',
 					id: 1
 				}
 			],

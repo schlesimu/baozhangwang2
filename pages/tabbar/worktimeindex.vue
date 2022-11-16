@@ -111,7 +111,7 @@
 						</view>
 					</view>
 					<view
-						style="width: 640upx; height: 80upx; background-color: #007AFF; border-radius: 10px; box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;"
+						style="width: 640upx; height: 80upx; background-color: #007AFF; border-radius: 10px; box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;"
 						@click="toPage(worktimerecord + '?type=' + currentTab)"
 					>
 						<i class="text-df cuIcon-add bold" style="color: #FFFFFF; font-size: 48upx;"></i>
@@ -126,11 +126,11 @@
 				<view style="border-left: 8upx solid #007AFF;padding-left: 10upx;margin-bottom: 10upx;">记事本</view>
 				<notebooklist ref="record"></notebooklist>
 				<view
-					style="width: 640upx; height: 80upx; background-color: #f3a73f; border-radius: 10px; box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;"
+					style="width: 640upx; height: 80upx; background-color: #f3a73f; border-radius: 10px; box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2); text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;"
 					@click="toPage(recordnotebook)"
 				>
-					<i class="text-df cuIcon-edit bold" style="color: #FFFFFF; font-size: 48upx;"></i>
-					<text style="color: #FFFFFF; font-size: 26upx;">记事本</text>
+					<!-- 记事本列表 <i class="text-df cuIcon-edit bold" style="color: #FFFFFF; font-size: 48upx;"></i>
+					--><text style="color: #FFFFFF; font-size: 26upx;">新建</text>
 				</view>
 			</view>
 		</view>

@@ -6,7 +6,7 @@
     "pagesworktime/salarysettings",
     "pagesworktime/recordnotebook",
     "pagesworktime/notebooklist",
-    "App.js",
+    "App",
     "pages/tabbar/worktimeindex"
   ],
   "subPackages": [

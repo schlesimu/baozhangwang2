@@ -1,8 +1,7 @@
 {
   "description": "项目配置文件。",
   "packOptions": {
-    "ignore": [],
-    "include": []
+    "ignore": []
   },
   "setting": {
     "urlCheck": false,
@@ -10,20 +9,35 @@
     "postcss": false,
     "minified": false,
     "newFeature": true,
-    "bigPackageSizeSupport": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    }
+    "bigPackageSizeSupport": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx2c5d53c1edba475f",
   "projectname": "人人保障网",
-  "condition": {},
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/tabbar/worktimeindex",
+          "pathName": "pages/tabbar/worktimeindex",
+          "query": ""
+        }
+      ]
+    }
   }
 }
